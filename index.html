@@ -2051,7 +2051,7 @@
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" id="contact">Contact</a>
+								<a class="nav-link" id="contact" onclick="chatOpen()">Contact</a>
 							</li>
 							<div class="dropdown-divider"></div>
 						</ul>
@@ -2791,11 +2791,10 @@
 		})
 
 
-		$('#contact').click(function () {
+		function chatOpen() {
 			$("#maximizeChat").click();
 			alert("Event");
-		});
-
+		}
 		// $('#maximizeChat').click(function (event) {
 		// 	event.stopPropagation();
 		// });
