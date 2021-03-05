@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[31],{"9UBN":function(n,t,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/educators",function(){return e("FjW6")}])},FjW6:function(n,t,e){"use strict";e.r(t);var o=e("ERkP"),u=e("51xF"),_=o.createElement;t.default=function(){return _(u.a,{type:"educators"})}}},[["9UBN",0,1,3,2,4,5,7,9,10,15]]]);

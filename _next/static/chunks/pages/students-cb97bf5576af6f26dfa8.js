@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[45],{"1jKL":function(n,t,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/students",function(){return e("NMsI")}])},NMsI:function(n,t,e){"use strict";e.r(t);var s=e("ERkP"),u=e("51xF"),_=s.createElement;t.default=function(){return _(u.a,{type:"students"})}}},[["1jKL",0,1,3,2,4,5,7,9,10,15]]]);
