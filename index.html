@@ -2008,6 +2008,9 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.navbar-collapse.collapse.in {
+  display: block!important;
+}
 
 
 		
@@ -2026,9 +2029,9 @@
 						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-end" style="margin-right: 10px;"
+					<div class="collapse navbar-collapse justify-content-end "  style="margin-right: 10px;"
 						id="navbarText">
-						<ul class="navbar-nav mb-2 mb-lg-0 "
+						<ul class="navbar-nav mb-2 mb-lg-0 " data-toggle="collapse" and data-target=".nav-collapse"
 							style="font-family: inter, -apple-system, BlinkMacSystemFont;font-size: 16px;">
 							<li class="nav-item">
 								<a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -2047,7 +2050,7 @@
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" href="#contact">Contact</a>
+								<a class="nav-link" href="#maximizeChat">Contact</a>
 							</li>
 							<div class="dropdown-divider"></div>
 						</ul>
@@ -2771,11 +2774,13 @@
 			</footer>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
-
-
+	<script>$('.navbar-nav>li>a').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+	});</script>
 </body>
 
 </html>
