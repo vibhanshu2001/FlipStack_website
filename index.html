@@ -1994,26 +1994,27 @@
 			-o-transform: scale(1.3);
 			display: inline-block;
 		}
-		
-		.nav-item:hover{
+
+		.nav-item:hover {
 			background-color: rgba(249, 245, 241, 1) !important;
 			border-radius: 13px;
 		}
-		.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+
+		.navbar-light .navbar-nav .nav-link.active,
+		.navbar-light .navbar-nav .show>.nav-link {
 			background-color: rgb(247, 227, 208) !important;
 			border-radius: 13px;
 		}
+
 		.navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.55);
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.navbar-collapse.collapse.in {
-  display: block!important;
-}
+			color: rgba(0, 0, 0, .55);
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 
-
-		
+		.navbar-collapse.collapse.in {
+			display: block !important;
+		}
 	</style>
 </head>
 
@@ -2029,7 +2030,7 @@
 						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-end "  style="margin-right: 10px;"
+					<div class="collapse navbar-collapse justify-content-end " style="margin-right: 10px;"
 						id="navbarText">
 						<ul class="navbar-nav mb-2 mb-lg-0 " data-toggle="collapse" and data-target=".nav-collapse"
 							style="font-family: inter, -apple-system, BlinkMacSystemFont;font-size: 16px;">
@@ -2050,7 +2051,7 @@
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" href="#maximizeChat">Contact</a>
+								<a class="nav-link" id="contact">Contact</a>
 							</li>
 							<div class="dropdown-divider"></div>
 						</ul>
@@ -2064,9 +2065,9 @@
 			<div class="jsx-2818712398 contain mt-5">
 				<div class="jsx-2818712398 limit">
 					<main class="jsx-2818712398 main">
-						
-						<section class="margin-s" >
-							<div class="analytics-scroll-point" id="hero">
+
+						<section class="margin-s">
+							<div class="analytics-scroll-point" id="home">
 							</div>
 							<div class="jsx-2835606664 limit limit--l">
 								<div class="margin-xs align-center">
@@ -2778,9 +2779,28 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
-	<script>$('.navbar-nav>li>a').on('click', function(){
-		$('.navbar-collapse').collapse('hide');
-	});</script>
+	<script>$('.navbar-nav>li>a').on('click', function () {
+			$('.navbar-collapse').collapse('hide');
+		});
+
+
+
+		$('.navbar-nav .nav-link').click(function () {
+			$('.navbar-nav .nav-link').removeClass('active');
+			$(this).addClass('active');
+		})
+
+
+		$('#contact').click(function () {
+			$("#maximizeChat").click;
+		});
+
+		// $('#maximizeChat').click(function (event) {
+		// 	event.stopPropagation();
+		// });
+
+	</script>
+
 </body>
 
 </html>
