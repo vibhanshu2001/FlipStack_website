@@ -2051,7 +2051,7 @@
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" id="contact" onclick="chatOpen()">Contact</a>
+								<a class="nav-link" id="contact" href="javascript:void(Tawk_API.toggle())">Contact</a>
 							</li>
 							<div class="dropdown-divider"></div>
 						</ul>
@@ -2800,7 +2800,37 @@
 		// });
 
 	</script>
+	<!--Start of tawk.to Status Code-->
 
+	<script type="text/javascript">
+
+		Tawk_API = Tawk_API || {};
+
+		Tawk_API.onStatusChange = function (status) {
+
+			if (status === 'online') {
+
+				document.getElementById('status').innerHTML = '<a href="javascript:void(Tawk_API.toggle())">Online - Click to chat</a>';
+
+			}
+
+			else if (status === 'away') {
+
+				alert("Currently away.")
+
+			}
+
+			else if (status === 'offline') {
+
+				alert("Offline");
+
+			}
+
+		};
+
+	</script>
+
+	<!--End of tawk.to Status Code -->
 </body>
 
 </html>
