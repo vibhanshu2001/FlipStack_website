@@ -1345,7 +1345,7 @@
 	<style id="__jsx-3190680145">
 		.video-sizer.jsx-3190680145 {
 			width: 100%;
-			padding-top: 62.5%;
+			padding-top: 49%;
 			height: 0;
 			overflow: hidden;
 			position: relative;
@@ -2015,13 +2015,20 @@
 		.navbar-collapse.collapse.in {
 			display: block !important;
 		}
+		body{
+			position: relative;
+		}
+		.logo-img{
+			height: 5rem;
+			width: 5rem;
+		}
 	</style>
 </head>
 
-<body>
+<body  data-bs-spy="scroll" data-bs-target="#navbarflip" data-offset="20">
 	<div id="__next">
 		<div>
-			<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fff;">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fff;" id="navbarflip">
 				<div class="container-fluid">
 					<a class="navbar-brand" style="margin-left: 10px;" href="index.html">
 						<img src="images/logo2.jpeg" alt="" style="height: 4rem;width: auto;">
@@ -2035,23 +2042,24 @@
 						<ul class="navbar-nav mb-2 mb-lg-0 " data-toggle="collapse" and data-target=".nav-collapse"
 							style="font-family: inter, -apple-system, BlinkMacSystemFont;font-size: 16px;">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#home">Home</a>
+								<a class="nav-link active scroll" aria-current="page" href="#home">Home</a>
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" href="#about_us">About Us</a>
+								<a class="nav-link scroll" href="#about_us">About Us</a>
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" href="#services">Services</a>
+								<a class="nav-link scroll" href="#services">Services</a>
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" href="#projects">Projects</a>
+								<a class="nav-link scroll" href="#projects">Projects</a>
 							</li>
 							<div class="dropdown-divider"></div>
 							<li class="nav-item">
-								<a class="nav-link" id="contact" href="javascript:void(Tawk_API.toggle())">Contact</a>
+								<a class="nav-link scroll" id="contact"
+									href="javascript:void(Tawk_API.toggle())">Contact</a>
 							</li>
 							<div class="dropdown-divider"></div>
 						</ul>
@@ -2087,9 +2095,11 @@
 								</div>
 								<div class="margin-xs align-center">
 									<div>
-										<h1 class="title title-size-xxl title-color-dark">All-in-one workspace</h1>
+										<h1 class="title title-size-xxl title-color-dark">We build it. Ship it. Run it.
+										</h1>
 									</div>
-									<h2 class="subtitle">One tool for your whole team. Write, plan, and get organized.
+									<h2 class="subtitle">Turn your visionary applications & digital products into
+										reality.
 									</h2>
 									<div class="jsx-3741803470 spacer">
 									</div>
@@ -2131,51 +2141,52 @@
 								<li class="nav-item" role="presentation">
 									<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
 										data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-										aria-selected="true">📘 Team Wiki</button>
+										aria-selected="true">👋 Who We Are?</button>
 								</li>
-								<li class="nav-item" role="presentation">
+								<!-- <li class="nav-item" role="presentation">
 									<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
 										data-bs-target="#pills-profile" type="button" role="tab"
-										aria-controls="pills-profile" aria-selected="false">🎒 Projects & tasks
+										aria-controls="pills-profile" aria-selected="false">✅ What We Do?
 									</button>
-								</li>
+								</li> -->
 								<li class="nav-item" role="presentation">
 									<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
 										data-bs-target="#pills-contact" type="button" role="tab"
-										aria-controls="pills-contact" aria-selected="false">✍️ Notes & docs</button>
+										aria-controls="pills-contact" aria-selected="false">🤝 Who Trusts Us?</button>
 								</li>
 							</ul>
 							<div class="tab-content" id="pills-tabContent">
 								<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
 									aria-labelledby="pills-home-tab">
 									<section class="">
-										<div class="analytics-scroll-point" id="team_features">
-										</div>
+										<div class="analytics-scroll-point" id="team_features"></div>
 										<div class="jsx-2835606664 limit limit--m">
 											<div class="">
-												<div class=" align-center">
-													<div class="jsx-2567523938 illustration">
-														<div
-															style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
-
-															<img src="images/imagex.webp" decoding="async"
-																style="position:block;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:auto;height:auto;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
-														</div>
-													</div>
-													<div class="jsx-3741803470 spacer">
-													</div>
-													<h2 class="title title-size-l title-color-dark">Bring clarity to
-														your team</h2>
-													<h2 class="subtitle">With one tool, everyone sees the whole picture.
-													</h2>
-													<div class="jsx-3741803470 spacer">
-													</div>
+												<div class=" align-center ">
+													<h2 class="title title-size-l title-color-dark">We Are Your CTO</h2>
+													<h2 class="subtitle">Extend your Tech Team with Experienced
+														Engineers</h2>
+													<div class="jsx-3741803470 spacer"></div>
+													<div class="jsx-3741803470 spacer"></div>
 												</div>
 												<div class="jsx-2377726461 features-wrap">
 
+													<div class="jsx-2814592896 features-item">
+														<div class="jsx-2567523938 illustration">
+															<div
+																style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
+																<img src="images/imagex.webp" decoding="async"
+																	style="position:block;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:auto;height:auto;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
+															</div>
+														</div>
+														<div class="jsx-3741803470 spacer">
+														</div>
+
+													</div>
 
 													<div class="jsx-2814592896 features-item">
-														<div class="jsx-2814592896 feature-image has-background">
+														<div class="jsx-2814592896 feature-image has-background"
+															style="display: none">
 															<div
 																style="display:block;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
 																<div
@@ -2185,30 +2196,15 @@
 																	style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
 															</div>
 														</div>
-														<h4 class="title title-size-s title-color-dark">The missing half
-															of Slack
-														</h4>
-														<div class="jsx-2814592896 caption">Too many insights getting
-															lost in Slack?
-															Flipstack is your team’s long term memory.</div>
-													</div>
-													<div class="jsx-2814592896 features-item">
-														<div class="jsx-2814592896 feature-image has-background">
-															<div
-																style="display:block;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
-																<div
-																	style="display:block;box-sizing:border-box;padding-top:57.14285714285714%">
-																</div>
-																<img src="images/image8.gif" decoding="async"
-																	style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
-															</div>
-														</div>
-														<h4 class="title title-size-s title-color-dark">Embed your
-															current tools
-														</h4>
-														<div class="jsx-2814592896 caption">Embed 500+ other apps inside
-															Flipstack
-															pages. Create a hub for everything your team is working on.
+														<h4 class="title title-size-s title-color-dark">Development &
+															Consulting</h4>
+														<div class="jsx-2814592896 caption">
+															Flipstack is a global full-stack Software Development
+															Company specialized in building highly-scalable & resilient
+															digital products. We are experienced in building and
+															operating highly available microservices architectures. Our
+															experts can help you with finding bottlenecks & providing
+															architecture best-practices.
 														</div>
 													</div>
 												</div>
@@ -2216,7 +2212,7 @@
 										</div>
 									</section>
 								</div>
-								<div class="tab-pane fade" id="pills-profile" role="tabpanel"
+								<!-- <div class="tab-pane fade" id="pills-profile" role="tabpanel"
 									aria-labelledby="pills-profile-tab">
 									<section class="">
 										<div class="analytics-scroll-point" id="team_features">
@@ -2234,10 +2230,8 @@
 													</div>
 													<div class="jsx-3741803470 spacer">
 													</div>
-													<h2 class="title title-size-l title-color-dark">Bring clarity to
-														your team</h2>
-													<h2 class="subtitle">With one tool, everyone sees the whole picture.
-													</h2>
+													<h2 class="title title-size-l title-color-dark">Bring clarity to your team</h2>
+													<h2 class="subtitle">We 🧡 JavaScript</h2>
 													<div class="jsx-3741803470 spacer">
 													</div>
 												</div>
@@ -2285,7 +2279,7 @@
 											</div>
 										</div>
 									</section>
-								</div>
+								</div> -->
 								<div class="tab-pane fade" id="pills-contact" role="tabpanel"
 									aria-labelledby="pills-contact-tab">
 									<section class="">
@@ -2294,63 +2288,99 @@
 										<div class="jsx-2835606664 limit limit--m">
 											<div class="">
 												<div class=" align-center">
-													<div class="jsx-2567523938 illustration">
-														<div
-															style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
-
-															<img src="images/imagex.webp" decoding="async"
-																style="position:block;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:auto;height:auto;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
-														</div>
-													</div>
-													<div class="jsx-3741803470 spacer">
-													</div>
-													<h2 class="title title-size-l title-color-dark">Bring clarity to
-														your team</h2>
-													<h2 class="subtitle">With one tool, everyone sees the whole picture.
-													</h2>
+													<h2 class="title title-size-l title-color-dark">These companies
+														already trust us</h2>
+													<h2 class="subtitle">We Build for teams of 20 or 2,000</h2>
 													<div class="jsx-3741803470 spacer">
 													</div>
 												</div>
-												<div class="jsx-2377726461 features-wrap">
-
-
-													<div class="jsx-2814592896 features-item">
-														<div class="jsx-2814592896 feature-image has-background">
-															<div
-																style="display:block;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
-																<div
-																	style="display:block;box-sizing:border-box;padding-top:57.14285714285714%">
-																</div>
-																<img src="images/image7.webp" decoding="async"
-																	style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
-															</div>
+												<!-- jsx-2377726461 -->
+												<div class=" features-wrap text-center">
+													<!-- <div class="row">
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo1.png">
 														</div>
-														<h4 class="title title-size-s title-color-dark">The missing half
-															of Slack
-														</h4>
-														<div class="jsx-2814592896 caption">Too many insights getting
-															lost in Slack?
-															Flipstack is your team’s long term memory.</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo2.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo3.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo4.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo5.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo6.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo7.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo8.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo9.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo10.svg">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo11.png">
+														</div>
+														<div class="col">
+															<img class="logo-img" src="images/clients/logo12.png">
+														</div>
+													</div> -->
+													<div class="row">
+														<div class="col">
+															<img class="" src="images/clients/logo1.png" style="height: 2.5rem;">
+														</div>
+														<div class="col">
+															<img class="" src="images/clients/logoareya.png"  style="height: 2.5rem;">
+														</div>
+														<div class="col">
+															<img class="" src="images/clients/logo3.png"   style="height: 2.5rem;">
+														</div>
 													</div>
-													<div class="jsx-2814592896 features-item">
-														<div class="jsx-2814592896 feature-image has-background">
-															<div
-																style="display:block;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
-																<div
-																	style="display:block;box-sizing:border-box;padding-top:57.14285714285714%">
-																</div>
-																<img src="images/image8.gif" decoding="async"
-																	style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%">
-															</div>
+													<div class="row mt-4">
+														<div class="col">
+															<img class="" src="images/clients/logo4.png"   style="height: 3.5rem;">
 														</div>
-														<h4 class="title title-size-s title-color-dark">Embed your
-															current tools
-														</h4>
-														<div class="jsx-2814592896 caption">Embed 500+ other apps inside
-															Flipstack
-															pages. Create a hub for everything your team is working on.
+														<div class="col">
+															<img class="" src="images/clients/logo5.png"   style="height: 2.5rem;">
+														</div>
+														<div class="col">
+															<img class="" src="images/clients/logo6.png"   style="height: 3.5rem;">
 														</div>
 													</div>
+													<div class="row mt-4">
+														<div class="col">
+															<img class="" src="images/clients/logo7.png"   style="height: 4.5rem;">
+														</div>
+														<div class="col">
+															<img class="" src="images/clients/logo8.png"   style="height: 4.5rem;">
+														</div>
+														<div class="col">
+															<img class="" src="images/clients/logo9.png"   style="height: 3.5rem;">
+														</div>
+													</div>
+													<div class="row mt-4">
+														<div class="col">
+															<img class="" src="images/clients/logo10.svg"   style="height: 2.5rem;">
+														</div>
+														<div class="col">
+															<img class="" src="images/clients/logo11.png"   style="height: 4.5rem;">
+														</div>
+														<div class="col">
+															<img class="" src="images/clients/logo12.png"   style="height: 4.5rem;">
+														</div>
+													</div>
+													
+													
+													
 												</div>
 											</div>
 										</div>
@@ -2371,7 +2401,7 @@
 									</div>
 									<div class="margin-l">
 										<div class="jsx-4011250827 align">
-											<h2 class="title title-size-l title-color-dark">Built to empower every team
+											<h2 class="title title-size-l title-color-dark">Our Services
 											</h2>
 											<h3 class="subtitle">Flipstack solves problems unique to every function.
 											</h3>
@@ -2394,14 +2424,15 @@
 														</div>
 													</div>
 													<h4 class="title title-size-s title-color-dark"
-														style="margin:10px 0 10px 0">Product</h4>
+														style="margin:10px 0 10px 0">Web/Native Apps</h4>
 													<ul class="jsx-2936178495 persona-list">
-														<li class="jsx-2936178495 persona-list-item">Visualize your
-															product roadmap</li>
-														<li class="jsx-2936178495 persona-list-item">Write feature specs
+														<li class="jsx-2936178495 persona-list-item">Tailormade
+															Enterprise Web Applications</li>
+														<li class="jsx-2936178495 persona-list-item">Host in-house or in
+															cloud
 														</li>
-														<li class="jsx-2936178495 persona-list-item">Cross-functional
-															collaboration</li>
+														<li class="jsx-2936178495 persona-list-item">Customised Android
+															& iOS Apps</li>
 													</ul>
 												</div>
 												<div class="jsx-2936178495 persona-grid-item">
@@ -2420,14 +2451,14 @@
 														</div>
 													</div>
 													<h4 class="title title-size-s title-color-dark"
-														style="margin:10px 0 10px 0">Engineering</h4>
+														style="margin:10px 0 10px 0">QA/Testing</h4>
 													<ul class="jsx-2936178495 persona-list">
-														<li class="jsx-2936178495 persona-list-item">Coordinate releases
+														<li class="jsx-2936178495 persona-list-item">
+															Functional/Performace Testing</li>
+														<li class="jsx-2936178495 persona-list-item">Test Automation
 														</li>
-														<li class="jsx-2936178495 persona-list-item">Codify processes
-														</li>
-														<li class="jsx-2936178495 persona-list-item">Write docs to ship
-															fast</li>
+														<li class="jsx-2936178495 persona-list-item">User Guide and
+															System Documentation</li>
 													</ul>
 												</div>
 												<div class="jsx-2936178495 persona-grid-item">
@@ -2446,14 +2477,13 @@
 														</div>
 													</div>
 													<h4 class="title title-size-s title-color-dark"
-														style="margin:10px 0 10px 0">HR</h4>
+														style="margin:10px 0 10px 0">MVP</h4>
 													<ul class="jsx-2936178495 persona-list">
-														<li class="jsx-2936178495 persona-list-item">Create a company
-															wiki</li>
-														<li class="jsx-2936178495 persona-list-item">Answer questions at
-															scale</li>
-														<li class="jsx-2936178495 persona-list-item">Onboard new
-															employees</li>
+														<li class="jsx-2936178495 persona-list-item">Agile Process</li>
+														<li class="jsx-2936178495 persona-list-item">Optimum Cost and
+															Time</li>
+														<li class="jsx-2936178495 persona-list-item">Combo of basic
+															functionality and unique features</li>
 													</ul>
 												</div>
 												<div class="jsx-2936178495 persona-grid-item">
@@ -2462,23 +2492,23 @@
 															style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
 															<div
 																style="box-sizing:border-box;display:block;max-width:100%">
-																<img style="max-width:100%;display:block;margin:0;border:none;padding:0"
+																<img style="height: 100px; max-width:100%;display:block;margin:0;border:none;padding:0"
 																	alt="" aria-hidden="true" role="presentation"
-																	src="images/image4.webp" />
+																	src="images/devops3.png" />
 															</div>
 															<img alt="Pen" src="images/image4.webp" decoding="async"
 																style="visibility:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" />
 														</div>
 													</div>
 													<h4 class="title title-size-s title-color-dark"
-														style="margin:10px 0 10px 0">Design</h4>
+														style="margin:10px 0 10px 0">Docker & DevOps</h4>
 													<ul class="jsx-2936178495 persona-list">
-														<li class="jsx-2936178495 persona-list-item">Track every project
+														<li class="jsx-2936178495 persona-list-item">CI/CD pipelines
 														</li>
-														<li class="jsx-2936178495 persona-list-item">Catalog logos,
-															fonts, and assets</li>
-														<li class="jsx-2936178495 persona-list-item">Publish a design
-															system</li>
+														<li class="jsx-2936178495 persona-list-item">Containerize
+															Applications</li>
+														<li class="jsx-2936178495 persona-list-item">End-to-End
+															automation of infrastructure</li>
 													</ul>
 												</div>
 												<div class="jsx-2936178495 persona-grid-item">
@@ -2497,14 +2527,14 @@
 														</div>
 													</div>
 													<h4 class="title title-size-s title-color-dark"
-														style="margin:10px 0 10px 0">Sales</h4>
+														style="margin:10px 0 10px 0">Data Solutions</h4>
 													<ul class="jsx-2936178495 persona-list">
 														<li class="jsx-2936178495 persona-list-item">Build a flexible
-															CRM</li>
-														<li class="jsx-2936178495 persona-list-item">Organize all
-															meeting notes</li>
-														<li class="jsx-2936178495 persona-list-item">Share a single
-															playbook</li>
+															CRM/ERP</li>
+														<li class="jsx-2936178495 persona-list-item">Data
+															warehousing/Business Intelligence</li>
+														<li class="jsx-2936178495 persona-list-item">Entire cycle of the
+															data, from entry to reports</li>
 													</ul>
 												</div>
 												<div class="jsx-2936178495 persona-grid-item">
@@ -2515,7 +2545,7 @@
 																style="box-sizing:border-box;display:block;max-width:100%">
 																<img style="max-width:100%;display:block;margin:0;border:none;padding:0"
 																	alt="" aria-hidden="true" role="presentation"
-																	src="images/image6.webp" />
+																	src="images/team1.png" />
 															</div>
 															<img alt="Mailbox with papers inside"
 																src="images/image6.webp" decoding="async"
@@ -2523,14 +2553,14 @@
 														</div>
 													</div>
 													<h4 class="title title-size-s title-color-dark"
-														style="margin:10px 0 10px 0">Marketing</h4>
+														style="margin:10px 0 10px 0">Dedicated Team</h4>
 													<ul class="jsx-2936178495 persona-list">
-														<li class="jsx-2936178495 persona-list-item">Make a style guide
+														<li class="jsx-2936178495 persona-list-item">We are your CTO
 														</li>
-														<li class="jsx-2936178495 persona-list-item">Track your content
-															calendar</li>
-														<li class="jsx-2936178495 persona-list-item">Keep tabs on
-															everything</li>
+														<li class="jsx-2936178495 persona-list-item">Team with a PM, Biz
+															Analyst & Engineers</li>
+														<li class="jsx-2936178495 persona-list-item">Fit perfectly with
+															your in-house tech team</li>
 													</ul>
 												</div>
 											</div>
@@ -2550,11 +2580,9 @@
 															<div class="jsx-1517571178 desktop-number">1</div>
 															<div class="jsx-1517571178 desktop-header-text">
 																<h2 class="title title-size-m title-color-dark"
-																	style="margin-bottom:5px">Team wiki</h2>
-																<div class="jsx-1517571178 body-copy">Turn your tribal
-																	knowledge into <span
-																		style="white-space:nowrap">easy-to-find</span>
-																	answers.</div>
+																	style="margin-bottom:5px">10Skills.co</h2>
+																<div class="jsx-1517571178 body-copy">Find the top
+																	skills for your desired job role.</div>
 															</div>
 														</div>
 														<div class="jsx-1517571178 desktop-image-wrap"><img
@@ -2576,7 +2604,7 @@
 														<div class="jsx-3190680145 video-sizer"><video width="960"
 																height="600" autoplay="" playsinline="" loop="" muted=""
 																class="jsx-3190680145 video-content">
-																<source src="images/video1.mp4" type="video/mp4"
+																<source src="images/10Skills.mp4" type="video/mp4"
 																	class="jsx-3190680145">
 															</video></div>
 													</div>
@@ -2592,10 +2620,9 @@
 															<div class="jsx-1517571178 desktop-number">2</div>
 															<div class="jsx-1517571178 desktop-header-text">
 																<h2 class="title title-size-m title-color-dark"
-																	style="margin-bottom:5px">Projects &amp; tasks</h2>
-																<div class="jsx-1517571178 body-copy">Kanban boards,
-																	tables, lists, and more. Customize any workflow.
-																</div>
+																	style="margin-bottom:5px">Cloudfare.info</h2>
+																<div class="jsx-1517571178 body-copy">Compare different
+																	AWS EC2 and RDS instances types</div>
 															</div>
 														</div>
 														<div class="jsx-1517571178 desktop-image-wrap"><img
@@ -2617,7 +2644,7 @@
 														<div class="jsx-3190680145 video-sizer"><video width="960"
 																height="600" autoplay="" playsinline="" loop="" muted=""
 																class="jsx-3190680145 video-content">
-																<source src="images/video1.mp4" type="video/mp4"
+																<source src="images/Cloudfare.mp4" type="video/mp4"
 																	class="jsx-3190680145">
 															</video></div>
 													</div>
@@ -2633,9 +2660,9 @@
 															<div class="jsx-1517571178 desktop-number">3</div>
 															<div class="jsx-1517571178 desktop-header-text">
 																<h2 class="title title-size-m title-color-dark"
-																	style="margin-bottom:5px">Notes &amp; docs</h2>
-																<div class="jsx-1517571178 body-copy">Systems that keep
-																	notes organized. Add any type of content.</div>
+																	style="margin-bottom:5px">Staak IoT</h2>
+																<div class="jsx-1517571178 body-copy">Data Collection
+																	&amp; Visualisation of Sensors</div>
 															</div>
 														</div>
 														<div class="jsx-1517571178 desktop-image-wrap"><img
@@ -2657,7 +2684,7 @@
 														<div class="jsx-3190680145 video-sizer"><video width="960"
 																height="600" autoplay="" playsinline="" loop="" muted=""
 																class="jsx-3190680145 video-content">
-																<source src="images/video1.mp4" type="video/mp4"
+																<source src="images/StaakIoT.mp4" type="video/mp4"
 																	class="jsx-3190680145">
 															</video></div>
 													</div>
@@ -2687,8 +2714,7 @@
 											</a>
 
 										</div>
-										<div class="jsx-2885466560 colophon">The all-in-one workspace for your notes,
-											tasks, wikis, and databases.</div>
+										<div class="jsx-2885466560 colophon">Made with ❤️ &nbsp; in 🇮🇳</div>
 										<div class="jsx-2885466560 copyright">©
 											<!-- -->2021
 											<!-- --> Flipstack, Inc.
@@ -2703,20 +2729,20 @@
 														style="color: rgba(0, 0, 0, 0.6)">Home</a>
 												</li>
 												<li class="jsx-2058086944">
-													<a class="jsx-2058086944" href="#services"
-														style="color: rgba(0, 0, 0, 0.6)">Services</a>
+													<a class="jsx-2058086944" href="#about_us"
+														style="color: rgba(0, 0, 0, 0.6)">About Us</a>
 												</li>
 												<li class="jsx-2058086944">
-													<a class="jsx-2058086944" href="#about_us"
-														style="color: rgba(0, 0, 0, 0.6)">About</a>
+													<a class="jsx-2058086944" href="#services"
+														style="color: rgba(0, 0, 0, 0.6)">Services</a>
 												</li>
 												<li class="jsx-2058086944">
 													<a class="jsx-2058086944" href="#projects"
 														style="color: rgba(0, 0, 0, 0.6)">Projects</a>
 												</li>
 												<li class="jsx-2058086944">
-													<a class="jsx-2058086944"
-														style="color: rgba(0, 0, 0, 0.6)"  href="javascript:void(Tawk_API.toggle())">Contact</a>
+													<a class="jsx-2058086944" style="color: rgba(0, 0, 0, 0.6)"
+														href="javascript:void(Tawk_API.toggle())">Contact</a>
 												</li>
 											</ul>
 										</div>
@@ -2827,7 +2853,9 @@
 		};
 
 	</script>
-
+	<script>
+		
+	</script>
 	<!--End of tawk.to Status Code -->
 </body>
 
